@@ -31,19 +31,19 @@ async function weather(city){
     document.querySelector(".feel").innerHTML = "Feels like"+" "+Math.round(data.main.feels_like)+"°c";
     if(data.weather[0].main == "clouds")
     {
-        weatherImg.src = "overcast.png";
+        weatherImg.src = "/overcast.png";
     }
     else if (data.weather[0].main == "clear")
     {
-        weatherImg.src = "clear.png";
+        weatherImg.src = "/clear.png";
     }
     else if (data.weather[0].main == "Rain")
     {
-        weatherImg.src = "rain.png";
+        weatherImg.src = "/rain.png";
     }
     else 
     {
-        weatherImg.src = "overcast.png";
+        weatherImg.src = "/overcast.png";
     }
 }
 }
