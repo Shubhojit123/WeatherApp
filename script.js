@@ -48,8 +48,9 @@ async function weather(city){
 }
 }
 btn.addEventListener("click",()=>{
-    let lowerCaseValue = searchBox.value.toLowerCase();
-
+    
+    let result = searchBox.value.toLowerCase();
+    let lowerCaseValue = result.trim();
     weather(lowerCaseValue);
 
 })
